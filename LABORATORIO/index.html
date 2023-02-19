@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+    <meta charset="utf-8"> <!--Para que acepte tildes en caso de que no lo haga-->
+    <title>Laboratorio curso programación</title> <!--Esto no va a salir en pantalla-->
+    <!--Aquí podría incluir algunos estilos que tendrán preferencia sobre los indicados en el css-->
+    <!--También podría añadir el tipo-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <main>
+    <form action="./procesaFormulario.php" method="POST" class="formulario" id="formulario">
+        <fieldset class="form-register">
+        <header><h1>Create Account</h1></header><br/>
+
+        <div class="formulario_datos" id="grupo_nombre">
+          <label for="nombre" class="formulario_label">Nombre</label>
+          <div class="formulario_nombre-input" id="formulario_input">
+                <input class="controls" type="text" name="nombre" id="nombre" value="" required/>
+                <span id="error-icon">
+                    <object data="error-icon.svg" type="image/svg+xml">
+                        <img src="file:///C:/PROGR/LABORATORIO/images/error-icon.svg" alt="Imagen PNG alternativa">
+                      </object>
+                </span>
+                <span id="success-icon">
+                    <object data="success-icon.svg" type="image/svg+xml">
+                        <img src="file:///C:/PROGR/LABORATORIO/images/success-icon.svg" alt="Imagen PNG alternativa">
+                      </object>
+                </span>
+            </div>
+            <p class="formulario_input-error" id="rellena">Rellene este campo</p>
+        </div>
+        
+        <div class="formulario_datos" id="grupo_email">
+          <label for="email" class="formulario_label">Email</label>
+          <div class="formulario_email-input" id="formulario_input">
+          <input class="controls" type="email" name="email" id="email" value="" required/>
+            <span id="error-icon">
+                <object data="error-icon.svg" type="image/svg+xml">
+                <img src="file:///C:/PROGR/LABORATORIO/images/error-icon.svg" alt="Imagen PNG alternativa">
+                </object>
+           </span>
+            <span id="success-icon">
+             <object data="success-icon.svg" type="image/svg+xml">
+                <img src="file:///C:/PROGR/LABORATORIO/images/success-icon.svg" alt="Imagen PNG alternativa">
+              </object>
+            </span>
+            </div>
+            <p class="formulario_input-error" id="rellena">Rellene este campo</p>
+            <p class="formulario_input-invalido">Email inválido</p>
+        </div>
+
+
+        <div class="formulario_datos" id="grupo_clave">
+            <label for="clave" class="formulario_label">Clave</label>
+            <div class="formulario_clave-input" id="formulario_input">
+            <input class="controls" type="password" name="clave" id="clave" value="" required/>
+            <span id="error-icon">
+                <object data="error-icon.svg" type="image/svg+xml">
+                    <img src="file:///C:/PROGR/LABORATORIO/images/error-icon.svg" alt="Imagen PNG alternativa">
+                  </object>
+            </span>
+            <span id="success-icon">
+                <object data="success-icon.svg" type="image/svg+xml">
+                    <img src="file:///C:/PROGR/LABORATORIO/images/success-icon.svg" alt="Imagen PNG alternativa">
+                  </object>
+            </span>
+            </div>
+            <p class="formulario_input-error" id="rellena">Rellene este campo</p>
+            <p class="formulario_input-invalido">No debe tener más de 8 caracteres</p>
+        </div>
+
+        <div class="formulario_datos" id="grupo_clave2">
+         <label for="clave2" class="formulario_label">Confirme su clave</label>
+        <div class="formulario_clave2-input" id="formulario_input">
+         <input class="controls" type="password" name="clave2" id="clave2" value="" required/>
+         <span id="error-icon">
+            <object data="error-icon.svg" type="image/svg+xml">
+                <img src="file:///C:/PROGR/LABORATORIO/images/error-icon.svg" alt="Imagen PNG alternativa">
+              </object>
+        </span>
+        <span id="success-icon">
+            <object data="success-icon.svg" type="image/svg+xml">
+                <img src="file:///C:/PROGR/LABORATORIO/images/success-icon.svg" alt="Imagen PNG alternativa">
+              </object>
+        </span>
+         </div>
+         <p class="formulario_input-error" id="rellena">Rellene este campo</p>
+         <p class="formulario_input-invalido">Las contraseñas no coinciden</p>
+        </div>
+
+        <div class="formulario_grupo formulario_grupo-btn-enviar">
+        <button class="botons" type="submit" name="registrarse" onclick="popupAlerta()" id="submit">ENVIAR</button>
+        </div>
+
+     </form>
+    </fieldset>
+    </main>
+    <script type="text/javascript" src="index.js" href="file:///C:/PROGR/LABORATORIO/index.js"></script>
+
+</html>
